@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click to Bounce Ball</title>
+    
+    <style>
+     body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #fcb2b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Added to arrange items vertically */
+}
+
+canvas {
+  border: 3px solid #333;
+  background-color: #fff;
+  margin-bottom: 20px; /* Added space between canvas and button */
+}
+
+#reset-button {
+  background-color: #0074D9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#reset-button:hover {
+  background-color: #0056B3;
+}
+
+#reset-button:active {
+  background-color: #004081;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <button id="reset-button">Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>
